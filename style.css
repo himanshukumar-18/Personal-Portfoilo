@@ -172,3 +172,102 @@ body {
 .firstli {
     margin-bottom: 20px;
 }
+
+/* self-information */
+.self-information {
+    width: 100%;
+    height: 100vh;
+    margin-top: 60px;
+    position: relative;
+}
+
+/* info-btns */
+.info-btns {
+    width: 15%;
+    height: fit-content;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.info-btns button {
+    width: 90%;
+    height: 90px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: none;
+    color: #3c3e41;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.info-btns button:hover {
+    background-color: #ff014f;
+    color: #ffffff
+}
+
+.about {
+    background-color: #ff014f !important;
+    color: #ffffff !important;
+}
+
+/* information */
+.information {
+    width: 82%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info-pg {
+    width: 100%;
+    height: 100%;
+}
+
+/* about page */
+.about-pg {
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    transition: .2s linear;
+}
+
+/* resume page */
+.resume-pg {
+    background-color: darkgoldenrod;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .2s linear;
+}
+
+/* work page */
+.work-pg {
+    background-color: darkkhaki;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .2s linear;
+}
+
+/* contact pg */
+.contact-pg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #6a67ce;
+    z-index: -3;
+    transition: .2s linear;
+}
