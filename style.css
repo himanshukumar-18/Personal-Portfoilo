@@ -24,7 +24,7 @@ body {
 /* content wrapper */
 .content-wrapper {
     width: 100%;
-    height: auto;
+    height: fit-content;
     background-color: #741a1a;
     display: flex;
     justify-content: center;
@@ -185,7 +185,6 @@ body {
 .info-btns {
     width: 15%;
     height: fit-content;
-    background-color: darkblue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,28 +193,36 @@ body {
     background-color: #ffffff;
 }
 
-.info-btns button {
+.info-btns a {
     width: 90%;
     height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     margin-bottom: 20px;
     border: none;
     font-size: 1.1rem;
     font-weight: 500;
-    background: none;
-    color: #3c3e41;
     transition: .3s;
     cursor: pointer;
 }
 
-.info-btns button:hover {
-    background-color: #ff014f;
-    color: #ffffff
-}
-
-.about {
+.info-btns a:hover {
     background-color: #ff014f !important;
     color: #ffffff !important;
+}
+
+.resume,
+.contact,
+.work {
+    color: #3c3e41;
+}
+
+
+.about {
+    background-color: #ff014f;
+    color: #ffffff;
 }
 
 /* information */
@@ -236,20 +243,164 @@ body {
 
 /* about page */
 .about-pg {
-    background-color: red;
+    background-color: #ffffff;
     position: absolute;
-    z-index: -1;
-    transition: .2s linear;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: .4s linear;
+    padding: 30px;
 }
+
+.about-content {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+
+.about-img {
+    height: fit-content;
+    width: fit-content;
+}
+
+.about-img img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.a-details {
+    margin-left: 50px;
+}
+
+.visit-profile {
+    color: #F9004D;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.deatils-head {
+    margin-top: 5px;
+    font-size: 2rem;
+    color: #3c3e41;
+}
+
+
+.about-sen {
+    margin-top: 10px;
+    color: #3c3e41;
+}
+
+.about-point {
+    margin-top: 15px;
+}
+
+.about-point ul {
+    list-style: none;
+}
+
+.point-li {
+    color: #3c3e41;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+
+.fa-check {
+    margin-right: 20px;
+    font-size: 1rem;
+    color: #F9004D;
+}
+
+/* download cv */
+.download-cv {
+    text-decoration: none;
+}
+
+.download-cv button {
+    padding: 20px 35px;
+    border: none;
+    box-shadow: 5px 5px 20px #3c3e4149;
+    border-radius: 5px;
+    color: #F9004D;
+    transition: .3s;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    margin-top: 20px;
+}
+
+.download-cv button:hover {
+    background: linear-gradient(145deg, #6a67ce, #fc636b);
+    color: #ffffff;
+    transform: translateY(-10%);
+    box-shadow: none;
+
+}
+ 
+.doing-bottom {
+    width: 100%;
+    height: fit-content;
+    margin-top: 25px;
+}
+
+.doing-head {
+    text-align: center;
+}
+
+.doing-head h2 {
+    font-size: 1.2rem;
+    color: #1e2125;
+}
+
+.doing-work {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.d-work {
+    width: 48%;
+    height: fit-content;
+    outline: 2px solid #878e9928;
+    border-radius: 10px;
+    padding: 32px 22px;
+}
+
+.d-i {
+    text-align: center;
+}
+
+.d-i i {
+    font-size: 4rem;
+    color: #F9004D;
+}
+
+.inner-head {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #1e2125;
+    margin: 20px 0px;
+}
+
+.inner-sen {
+    font-size: 1.1rem;
+    color: #3c3e41;
+    text-align: center;
+}
+
+
 
 /* resume page */
 .resume-pg {
     background-color: darkgoldenrod;
     z-index: -1;
     position: absolute;
+    left: 0;
     top: 0;
-    right: 0;
-    transition: .2s linear;
+    transition: .4s linear;
 }
 
 /* work page */
@@ -259,7 +410,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    transition: .2s linear;
+    transition: .4s linear;
 }
 
 /* contact pg */
@@ -269,5 +420,5 @@ body {
     right: 0;
     background-color: #6a67ce;
     z-index: -3;
-    transition: .2s linear;
+    transition: .4s linear;
 }
