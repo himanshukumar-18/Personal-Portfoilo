@@ -224,7 +224,6 @@
     /* resume page */
     .quality-education {
         flex-direction: column;
-        gap: 20px;
     }
 
     .education-list {
@@ -233,7 +232,7 @@
     }
 
     .list-border {
-        height: 98vh;
+        display: none;
     }
 
     .secound-box {
