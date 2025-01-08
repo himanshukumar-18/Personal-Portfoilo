@@ -126,7 +126,7 @@ body {
 
 
 .social-share a:hover {
-    background: linear-gradient(145deg, #6a67ce, #fc636b);
+    background-image: linear-gradient(145deg, #6a67ce, #fc636b);
     transform: translateY(-10%);
     box-shadow: none;
 }
@@ -232,13 +232,13 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    border-radius: 10px;
     overflow: hidden;
 }
 
 .info-pg {
     width: 100%;
-    height: 100%;
+    height: fit-content;
+    border-radius: 10px;
 }
 
 /* about page */
@@ -333,7 +333,7 @@ body {
 }
 
 .download-cv button:hover {
-    background: linear-gradient(145deg, #6a67ce, #fc636b);
+    background-image: linear-gradient(145deg, #6a67ce, #fc636b);
     color: #ffffff;
     transform: translateY(-10%);
     box-shadow: none;
