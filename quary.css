@@ -15,6 +15,16 @@
     .profile {
         height: 30vh;
     }
+
+    /* self information */
+    .self-information {
+        height: 120vh;
+    }
+
+    .list-border {
+        height: 90vh;
+    }
+
 }
 
 /* mobile */
@@ -177,7 +187,7 @@
     }
 
     .self-information {
-        height:300vh;
+        height: 300vh;
     }
 
     .visit-profile {
@@ -209,6 +219,53 @@
     .first-d-work {
         margin-bottom: 25px;
     }
+
+
+    /* resume page */
+    .quality-education {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .education-list {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .list-border {
+        height: 98vh;
+    }
+
+    .secound-box {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .edu-corner {
+        padding: 35px;
+        background-image: linear-gradient(145deg, #6a67ce, #fc636b);
+    }
+
+    .edu-corner:hover {
+        background-image: linear-gradient(145deg, #6a67ce, #fc636b);
+    }
+
+    .hang-border::before {
+        border-color: #F9004D !important;
+    }
+
+    .title-head {
+        color: #ffffff !important;
+    }
+
+    .education-name {
+        color: #ffffff;
+    }
+
+    .edu-sen {
+        color: #ffffff;
+    }
+
 
 
 

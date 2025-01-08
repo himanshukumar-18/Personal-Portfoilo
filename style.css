@@ -176,7 +176,7 @@ body {
 /* self-information */
 .self-information {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     margin-top: 60px;
     position: relative;
 }
@@ -339,7 +339,7 @@ body {
     box-shadow: none;
 
 }
- 
+
 .doing-bottom {
     width: 100%;
     height: fit-content;
@@ -393,14 +393,147 @@ body {
 
 
 
+
 /* resume page */
 .resume-pg {
-    background-color: darkgoldenrod;
+    background-color: #ffffff;
     z-index: -1;
     position: absolute;
     left: 0;
     top: 0;
     transition: .4s linear;
+    padding: 30px;
+}
+
+.resume-head {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-head-text {
+    font-size: 1.8rem;
+    color: #1e2125;
+}
+
+.quality-education {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-list {
+    height: fit-content;
+    width: 48%;
+    position: relative;
+    display: flex;
+}
+
+.list-border {
+    height: 67vh;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #3c3e411b;
+}
+
+.education-details {
+    height: fit-content;
+    width: fit-content;
+    margin-left: 30px;
+    transition: 0.3s all;
+}
+
+.edu-corner {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    padding: 60px 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    background-size: cover;
+    transition: 0.3s all;
+    position: relative;
+}
+
+.edu-corner:hover {
+    background-image: linear-gradient(145deg, #6a67ce, #fc636b);
+}
+
+.edu-corner:hover .title-head {
+    color: #ffffff !important;
+}
+
+.edu-corner:hover .education-name {
+    color: #ffffff;
+}
+
+.edu-corner:hover .edu-sen {
+    color: #ffffff;
+}
+
+.hang-border {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: #3c3e411b;
+    top: 60px;
+    left: -30px;
+}
+
+.hang-border::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border: 5px solid #3c3e411b;
+    padding: 1px;
+    top: 50%;
+    left: -13px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: 0.3s all;
+    z-index: 1;
+}
+
+.edu-corner:hover .hang-border::before {
+
+    border-color: #F9004D;
+
+}
+
+
+.header-title {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #3c3e410f;
+}
+
+.title-head {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 10px;
+    color: #3c3e41;
+    transition: 0.3s;
+}
+
+.education-name {
+    font-size: 0.8rem;
+    color: #3c3e41;
+    transition: 0.3s;
+}
+
+.edu-sen {
+    margin-top: 15px;
+    color: #878e99;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.secound-box {
+    margin-top: 35px;
 }
 
 /* work page */

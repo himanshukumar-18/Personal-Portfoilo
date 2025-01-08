@@ -19,6 +19,7 @@ document.querySelector(".resume").addEventListener("click", function () {
     aboutPage.style.opacity = 0;
     workPage.style.opacity = 0;
     contactPage.style.opacity = 0;
+    resumePage.style.zIndex = 1;
 });
 
 
