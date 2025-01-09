@@ -187,7 +187,7 @@
     }
 
     .self-information {
-        height: 300vh;
+        height: 350vh;
     }
 
     .visit-profile {
@@ -264,6 +264,29 @@
     .edu-sen {
         color: #ffffff;
     }
+
+    /* contact links */
+    .contact-links {
+        height: 100px;
+        width: 40px;
+    }
+
+    .links {
+        font-size: 1.1rem;
+    }
+
+
+
+    /* skill section */
+    .skill-container {
+        flex-direction: column;
+    }
+
+    .skill-content {
+        width: 100%;
+    }
+
+
 
 
 

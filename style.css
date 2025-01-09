@@ -176,7 +176,7 @@ body {
 /* self-information */
 .self-information {
     width: 100%;
-    height: 95vh;
+    height: fit-content;
     margin-top: 60px;
     position: relative;
 }
@@ -232,7 +232,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .info-pg {
@@ -248,7 +248,7 @@ body {
     left: 0;
     top: 0;
     z-index: 1;
-    transition: .4s linear;
+    transition: .5s all;
     padding: 30px;
 }
 
@@ -394,6 +394,10 @@ body {
 
 
 
+
+
+
+
 /* resume page */
 .resume-pg {
     background-color: #ffffff;
@@ -401,8 +405,10 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    transition: .4s linear;
+    transition: .5s all;
     padding: 30px;
+    /* display: none; */
+    opacity: 0;
 }
 
 .resume-head {
@@ -536,22 +542,253 @@ body {
     margin-top: 35px;
 }
 
+/* skills */
+.skills {
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+}
+
+.skill-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-content {
+    width: 48%;
+    height: fit-content;
+}
+
+
+.skill-head {
+    font-size: 1.8rem;
+    color: #1e2125;
+    text-align: center;
+}
+
+.development-skill {
+    margin-top: 50px;
+    width: 100%;
+    height: fit-content;
+}
+
+.chart {
+    width: 100%;
+    height: fit-content;
+}
+
+.chart-content {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #1e2125;
+}
+
+.progress {
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+    position: relative;
+    outline: 3px solid #3c3e4131;
+}
+
+.inner-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(66deg, rgba(255, 255, 255, 1) 6%, rgba(255, 2, 2, 0.8855917366946778) 74%);
+    ;
+    border-radius: 10px;
+}
+
+.point {
+    position: absolute;
+    top: -32px;
+}
+
+.point span {
+    font-size: 1rem;
+    color: #1e2125;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+/* html */
+.html-progress {
+    width: 0%;
+    transition: 2s all;
+}
+
+.html-point {
+    right: 100px;
+    opacity: 0;
+    transition: 2s all;
+}
+
+/* css */
+.css-progress {
+    width: 0%;
+    transition: 2s all;
+}
+
+.css-point {
+    left: 40%;
+    opacity: 0;
+    transition: 2s all;
+}
+
+/* javascript */
+.javascript-progress {
+    width: 0%;
+    transition: 2s all;
+}
+
+.javascript-point {
+    left: 30%;
+    transition: 2s all;
+    opacity: 0;
+}
+
+/* bootstrap */
+.bootstrap-progress {
+    width: 0%;
+    transition: 2s all;
+}
+
+.bootstrap-point {
+    left: 22%;
+    transition: 2s all;
+    opacity: 0;
+}
+
+.bootstrap {
+    margin-bottom: 0 !important;
+}
+
+/* react */
+.react-progress {
+    width: 0%;
+    transition: 2s all;
+}
+
+.react-point {
+    left: 22%;
+    transition: 2s all;
+    opacity: 0;
+}
+
+/* query */
+.query-progress {
+    width: 0%;
+    transition: 2s all;
+}
+
+.query-point {
+    left: 32%;
+    transition: 2s all;
+    opacity: 0;
+}
+
+/* swiper */
+.swiper-progress {
+    width: 0%;
+    transition: 2s all;
+}
+
+.swiper-point {
+    left: 32%;
+    transition: 2s all;
+    opacity: 0;
+}
+
+
+/* wordpress */
+.wordpress-progress {
+    width: 0%;
+    transition: 2s all;
+}
+
+.wordpress-point {
+    left: 22%;
+    transition: 2s all;
+    opacity: 0;
+}
+
+
+
+
+
+
+
 /* work page */
 .work-pg {
     background-color: darkkhaki;
     z-index: -2;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     transition: .4s linear;
+    display: none;
 }
 
 /* contact pg */
 .contact-pg {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: #6a67ce;
     z-index: -3;
     transition: .4s linear;
+}
+
+
+/* contact links */
+.contact-links {
+    height: 120px;
+    width: 52px;
+    background: #ffffff;
+    position: fixed;
+    bottom: 100px;
+    right: -120px;
+    opacity: 0;
+    z-index: 1111111;
+    transition: 0.3s all;
+}
+
+.links {
+    text-decoration: none;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.links i {
+    transition: 0.3 s;
+}
+
+.links:hover i {
+    transform: scale(1.1);
+}
+
+.whatsapp-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #25d366;
+    color: #fff;
+}
+
+.linkedin {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: #0a66c2;
 }
