@@ -698,7 +698,7 @@ body {
     background-color: #ffffff;
     z-index: -2;
     transition: 0.4s linear;
-    display: none;
+    /* display: none; */
     padding: 30px;
 }
 
