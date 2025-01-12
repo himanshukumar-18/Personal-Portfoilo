@@ -299,6 +299,30 @@
     }
 
 
+    /* work swiper */
+    .swiper-slide {
+        width: 100% !important;
+    }
+
+
+
+    .landing-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    .res-content {
+        margin-top: 20px !important;
+    }
+
+    .ele-deatils {
+        width: 100% !important;
+        height: 400px !important;
+    }
+
+
 
 
 
