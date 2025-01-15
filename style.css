@@ -9,7 +9,22 @@
 body {
     font-family: "Poppins", serif;
     background-color: #ecf0f3;
+    scroll-behavior: smooth;
 }
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f9004d;
+}
+
 
 /* bg landing */
 .bg-landing {
@@ -601,6 +616,7 @@ body {
     transition: 2s all;
 }
 
+
 .html-point {
     right: 100px;
     opacity: 0;
@@ -903,11 +919,76 @@ body {
 
 /* contact pg */
 .contact-pg {
-    background-color: #6a67ce;
+    background-color: #ffffff;
     z-index: -3;
     transition: 0.4s linear;
     display: none;
+    padding: 30px;
 }
+
+.contact {
+    width: 100%;
+    height: fit-content;
+}
+
+.contact-pic {
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+.contact-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contact-deatils {
+    width: 100%;
+    margin-top: 20px;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact-name {
+    font-size: 2rem;
+    color: #3c3e41;
+}
+
+.con-work {
+    font-size: 1rem;
+    color: #3c3e41;
+    margin-top: 10px;
+}
+
+.con-sen {
+    font-size: 1rem;
+    color: #3c3e41;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.con-phone {
+    font-size: 1rem;
+    color: #3c3e41;
+    margin-top: 10px;
+}
+
+.email {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
 
 /* contact links */
 .contact-links {
@@ -932,8 +1013,10 @@ body {
     font-size: 1.3rem;
 }
 
+
+
 .links i {
-    transition: 0.3 s;
+    transition: 0.3s !important;
 }
 
 .links:hover i {
@@ -995,3 +1078,55 @@ body {
     color: #3c3e41;
     padding: 100px;
 }
+
+/* click to top btn */
+.clk-top {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #3c3e411e;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .4s;
+    pointer-events: none;
+    transition: .3s;
+    opacity: 0;
+    transform: translateY(30px);
+    cursor: pointer;
+}
+
+.clk-top.on {
+    pointer-events: auto;
+    opacity: 1;
+    bottom: 30px;
+    transform: translateY(0);
+}
+
+.clk-jump .clk-top i {
+    font-size: 1rem;
+    color: #3c3e41;
+}
+
+
+
+
+
+
+/* cursor */
+#cursor {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    mix-blend-mode: difference;
+    top: 0;
+}
+
+

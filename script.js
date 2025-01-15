@@ -235,6 +235,32 @@ resumeBtn.addEventListener("click", () => {
 
 
 
+
+// click to top btn
+
+let jumpBtn = document.querySelector(".clk-top");
+
+window.addEventListener("scroll", function () {
+
+    if (this.window.pageYOffset > 100) {
+        jumpBtn.classList.add("on");
+    }
+
+    else {
+        jumpBtn.classList.remove("on")
+    }
+
+})
+
+
+
+
+
+
+
+
+
+// gsap
 let tl = gsap.timeline({
     scrollTrigger: {
         trigger: "#page2",
@@ -245,12 +271,48 @@ let tl = gsap.timeline({
     }
 });
 
+
+
 tl.to(".second", {
     x: 450,
 }, 'a')
 tl.to(".first", {
     x: -450,
 }, 'a')
+
+
+// cursor
+    
+let cursor = document.querySelector("#cursor");
+let body = document.querySelector("body");
+
+window.addEventListener("mousemove",function(dets){
+    
+    gsap.to(cursor,{
+        x : dets.x,
+        y : dets.y
+    })
+
+})
+
+
+box.addEventListener("mouseenter",function(dets){   
+    gsap.to(cursor,{
+        scale : 4,
+
+    })
+})
+
+box.addEventListener("mouseleave",function(dets){   
+    gsap.to(cursor,{
+        scale : 1,
+    })
+})
+
+
+
+
+
 
 
 
@@ -276,15 +338,15 @@ var swiper = new Swiper(".mySwiper", {
 var appendNumber = 4;
 var prependNumber = 1;
 document
-    .querySelector(".prepend-2-slides")
-    .addEventListener("click", function (e) {
-        e.preventDefault();
+.querySelector(".prepend-2-slides")
+.addEventListener("click", function (e) {
+    e.preventDefault();
         swiper.prependSlide([
             '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
             '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
         ]);
     });
-document
+    document
     .querySelector(".prepend-slide")
     .addEventListener("click", function (e) {
         e.preventDefault();
@@ -292,7 +354,7 @@ document
             '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
         );
     });
-document
+    document
     .querySelector(".append-slide")
     .addEventListener("click", function (e) {
         e.preventDefault();
@@ -300,7 +362,7 @@ document
             '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
         );
     });
-document
+    document
     .querySelector(".append-2-slides")
     .addEventListener("click", function (e) {
         e.preventDefault();
@@ -309,3 +371,8 @@ document
             '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
         ]);
     });
+    
+    
+    
+    
+    

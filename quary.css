@@ -263,7 +263,7 @@
     /* contact links */
     .contact-links {
         height: 100px;
-        width: 40px;
+        width: 50px;
     }
 
     .links {
@@ -320,6 +320,21 @@
     .ele-deatils {
         width: 100% !important;
         height: 400px !important;
+    }
+
+    /* click top */
+    .clk-jump {
+        display: none;
+    }
+
+    /* contact page */
+    .con-sen {
+        width: 100%;
+    }
+
+    /* cursor */
+    #cursor {
+        display: none;
     }
 
 
