@@ -25,13 +25,19 @@ body {
     background-color: #f9004d;
 }
 
+/* bg ani */
+.bg-ani {
+    width: 100%;
+    height: fit-content;
+}
+
 
 /* bg landing */
 .bg-landing {
     width: 100%;
     height: 35vh;
     position: relative;
-    background: url(Asset/landing.jpg);
+    background: url(Asset/cover.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -40,7 +46,6 @@ body {
 .container {
     width: 100%;
     height: fit-content;
-    /* background-color: #ffffff; */
     display: flex;
     justify-content: center;
     margin-bottom: 10vh;
@@ -274,6 +279,7 @@ body {
     width: 350px;
     height: 450px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .a-details {
@@ -1119,14 +1125,17 @@ body {
 
 /* cursor */
 #cursor {
-    width: 35px;
-    height: 35px;
-    background-color: #fff;
-    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 22% 78% 70% 30% / 17% 30% 70% 83% ;
+    pointer-events: none;
     position: fixed;
     z-index: 9;
     mix-blend-mode: difference;
     top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
 }
 
 

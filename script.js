@@ -71,6 +71,12 @@ document.querySelector(".contact").addEventListener("click", function () {
     workPage.style.display = "none";
 });
 
+
+
+
+
+
+
 // info btn
 
 let aboutBtn = document.querySelector(".about");
@@ -147,6 +153,10 @@ contactBtn.addEventListener("click", function () {
 });
 
 
+
+
+
+
 // contact links
 
 let links = document.querySelector(".contact-links");
@@ -157,6 +167,10 @@ contactBtn.addEventListener("click", () => {
     links.style.right = 0;
 
 })
+
+
+
+
 
 
 
@@ -236,6 +250,9 @@ resumeBtn.addEventListener("click", () => {
 
 
 
+
+
+
 // click to top btn
 
 let jumpBtn = document.querySelector(".clk-top");
@@ -281,31 +298,40 @@ tl.to(".first", {
 }, 'a')
 
 
+
+
+
+
+
+
+
+
+
 // cursor
-    
+
 let cursor = document.querySelector("#cursor");
 let body = document.querySelector("body");
 
-window.addEventListener("mousemove",function(dets){
-    
-    gsap.to(cursor,{
-        x : dets.x,
-        y : dets.y
+window.addEventListener("mousemove", function (dets) {
+
+    gsap.to(cursor, {
+        x: dets.x,
+        y: dets.y
     })
 
 })
 
 
-box.addEventListener("mouseenter",function(dets){   
-    gsap.to(cursor,{
-        scale : 4,
+box.addEventListener("mouseenter", function (dets) {
+    gsap.to(cursor, {
+        scale: 4,
 
     })
 })
 
-box.addEventListener("mouseleave",function(dets){   
-    gsap.to(cursor,{
-        scale : 1,
+box.addEventListener("mouseleave", function (dets) {
+    gsap.to(cursor, {
+        scale: 1,
     })
 })
 
@@ -338,15 +364,15 @@ var swiper = new Swiper(".mySwiper", {
 var appendNumber = 4;
 var prependNumber = 1;
 document
-.querySelector(".prepend-2-slides")
-.addEventListener("click", function (e) {
-    e.preventDefault();
+    .querySelector(".prepend-2-slides")
+    .addEventListener("click", function (e) {
+        e.preventDefault();
         swiper.prependSlide([
             '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
             '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
         ]);
     });
-    document
+document
     .querySelector(".prepend-slide")
     .addEventListener("click", function (e) {
         e.preventDefault();
@@ -354,7 +380,7 @@ document
             '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
         );
     });
-    document
+document
     .querySelector(".append-slide")
     .addEventListener("click", function (e) {
         e.preventDefault();
@@ -362,7 +388,7 @@ document
             '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
         );
     });
-    document
+document
     .querySelector(".append-2-slides")
     .addEventListener("click", function (e) {
         e.preventDefault();
@@ -371,8 +397,5 @@ document
             '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
         ]);
     });
-    
-    
-    
-    
-    
+
+
