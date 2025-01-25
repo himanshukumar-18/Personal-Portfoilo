@@ -1128,7 +1128,7 @@ body {
     width: 30px;
     height: 30px;
     background-color: #ffffff;
-    border-radius: 22% 78% 70% 30% / 17% 30% 70% 83% ;
+    border-radius: 22% 78% 70% 30% / 17% 30% 70% 83%;
     pointer-events: none;
     position: fixed;
     z-index: 9;
@@ -1136,6 +1136,5 @@ body {
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
+
 }
-
-

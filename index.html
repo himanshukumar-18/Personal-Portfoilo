@@ -39,8 +39,7 @@
                 <div class="profile-content firstprofile">
                     <!-- thumbnail -->
                     <div class="thumbnail">
-                        <img src="Asset/profile.jpg" alt=""
-                            class="profile-img" />
+                        <img src="Asset/profile.jpg" alt="" class="profile-img" />
                     </div>
 
                     <!-- profile right -->
@@ -118,8 +117,7 @@
                     <div class="about-pg info-pg">
                         <div class="about-content">
                             <div class="about-img">
-                                <img src="Asset/about-i.JPG"
-                                    alt="" />
+                                <img src="Asset/about-i.JPG" alt="" />
                             </div>
 
                             <div class="a-details">
@@ -973,8 +971,32 @@
 
 
 
+    <script>
+        // swiper
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 1500,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
     <!-- script -->
     <script src="script.js"></script>
+
 </body>
 
 </html>
