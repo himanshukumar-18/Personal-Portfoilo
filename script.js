@@ -187,6 +187,12 @@ let swiperPoint = document.querySelector(".swiper-point");
 let wordProgress = document.querySelector(".wordpress-progress");
 let wordPoint = document.querySelector(".wordpress-point");
 
+let tailwindProgress = document.querySelector(".tailwind-progress");
+let tailwindPoints = document.querySelector(".tailwind-point");
+
+let pythonProgress = document.querySelector(".python-progress");
+let pythonPoints = document.querySelector(".python-point");
+
 
 
 resumeBtn.addEventListener("click", () => {
@@ -226,6 +232,16 @@ resumeBtn.addEventListener("click", () => {
         wordProgress.style.width = "50%";
         wordPoint.style.left = "42%";
         wordPoint.style.opacity = 1;
+
+
+        tailwindProgress.style.width = "70%";
+        tailwindPoints.style.left = "62%";
+        tailwindPoints.style.opacity = 1;
+
+
+        pythonProgress.style.width = "50%";
+        pythonPoints.style.left = "45%";
+        pythonPoints.style.opacity = 1;
 
 
     }, 2000);

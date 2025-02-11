@@ -193,6 +193,17 @@ body {
     margin-bottom: 20px;
 }
 
+
+.firstli a {
+    text-decoration: none;
+    color: #3c3e41;
+    transition: .2s all;
+}
+
+.firstli a:hover {
+    text-decoration: underline;
+}
+
 /* self-information */
 .self-information {
     width: 70%;
@@ -726,6 +737,31 @@ body {
     padding: 30px;
 }
 
+/* tailwind */
+.tailwind-progress {
+    width: 0%;
+    transition: 2s all;
+}
+
+.tailwind-point {
+    left: 22%;
+    transition: 2s all;
+    opacity: 0;
+}
+
+/* python */
+
+.python-progress {
+    width: 0%;
+    transition: 2s all;
+}
+
+.python-point {
+    left: 22%;
+    transition: 2s all;
+    opacity: 0;
+}
+
 .work-header {
     width: 100%;
     height: fit-content;
@@ -987,6 +1023,15 @@ body {
 
 .email {
     margin-top: 0;
+}
+
+.con-cll {
+    text-decoration: none;
+    transition: .2s all
+}
+
+.con-cll:hover {
+    text-decoration: underline;
 }
 
 
