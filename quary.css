@@ -146,6 +146,11 @@
         font-weight: 500;
     }
 
+    .about-img img {
+        width: 320px !important;
+        height: 350px;
+    }
+
     /* information  */
     .information {
         width: 100%;
