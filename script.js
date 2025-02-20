@@ -239,8 +239,8 @@ resumeBtn.addEventListener("click", () => {
         tailwindPoints.style.opacity = 1;
 
 
-        pythonProgress.style.width = "50%";
-        pythonPoints.style.left = "45%";
+        pythonProgress.style.width = "30%";
+        pythonPoints.style.left = "25%";
         pythonPoints.style.opacity = 1;
 
 
