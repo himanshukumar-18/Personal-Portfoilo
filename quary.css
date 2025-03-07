@@ -313,6 +313,10 @@
         width: 100% !important;
     }
 
+    .temple-name {
+        opacity: 1;
+        visibility: visible;
+    }
 
 
     .landing-content {
