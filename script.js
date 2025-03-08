@@ -249,6 +249,19 @@ resumeBtn.addEventListener("click", () => {
 })
 
 
+// loader
+let randomTime = Math.floor(Math.random() * 3000) + 3000;
+console.log(randomTime);
+
+let loaderPage = document.querySelector('.loader');
+
+setTimeout(() => {
+
+    loaderPage.style.top = "-100%"
+
+}, randomTime);
+
+
 // click to top btn
 
 let jumpBtn = document.querySelector(".clk-top");
