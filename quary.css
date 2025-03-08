@@ -46,6 +46,10 @@
         z-index: 111;
     }
 
+    .container {
+        margin-top: 10vh;
+    }
+
     /* first profile */
     .firstprofile {
         border-right: none;

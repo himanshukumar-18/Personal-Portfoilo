@@ -257,7 +257,7 @@ let loaderPage = document.querySelector('.loader');
 
 setTimeout(() => {
 
-    loaderPage.style.top = "-100%"
+    loaderPage.style.visibility = "hidden"
 
 }, randomTime);
 
