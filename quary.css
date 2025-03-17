@@ -14,7 +14,7 @@
     }
 
     /* self information */
-    .self-information {
+    .self-information,  .c-wrapper {
         width: 95%;
     }
 
@@ -354,9 +354,23 @@
         display: none;
     }
 
+    .c-wrapper {
+        width: 95%;
+    }
+
+    .c-header {
+        font-size: 1.2rem;
+    }
 
 
+    .c-img img {
+        width: 100%;
+        height: 600px;
+    }
 
+    .brand-card-slide {
+        width: 200px;
+    }
 
 
 

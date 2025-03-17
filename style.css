@@ -10,6 +10,7 @@ body {
     font-family: "Poppins", serif;
     background-color: #ecf0f3;
     scroll-behavior: smooth;
+    cursor: none;
 }
 
 /* custom scroll bar */
@@ -1096,13 +1097,13 @@ body {
 .font-container {
     width: 100%;
     height: fit-content;
-    padding: 20px 0px;
+    padding: 10px 0px;
     background-color: #ffffff;
     overflow: hidden;
 }
 
 .first {
-    font-size: 5rem;
+    font-size: 2.2rem;
     white-space: nowrap;
     text-transform: uppercase;
     color: transparent;
@@ -1110,10 +1111,25 @@ body {
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
-.span {
-    color: transparent;
-    -webkit-text-stroke: 1px #3c3e41;
-}
+
+.brand-slider-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  .b-slider {
+    display: flex;
+  }
+
+  .brand-card-slide {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* footer  */
 .footer-container {
@@ -1174,8 +1190,10 @@ body {
 #cursor {
     width: 30px;
     height: 30px;
-    background-color: #ffffff;
-    border-radius: 22% 78% 70% 30% / 17% 30% 70% 83%;
+    /* background-color: #ffffff; */
+    outline: 2px solid #ffffff;
+    border-radius: 50%;
+    /* border-radius: 22% 78% 70% 30% / 17% 30% 70% 83%; */
     pointer-events: none;
     position: fixed;
     z-index: 1111;
@@ -1183,8 +1201,17 @@ body {
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.dought {
+    width: 7px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
 
 
 /* loader */
@@ -1291,4 +1318,36 @@ body {
         blinkCursor 0.1s step-end infinite alternate;
     color: #f9004d;
     font-weight: 600;
+}
+
+
+.certificate-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.c-wrapper {
+    width: 70%;
+}
+
+.c-header {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1e2125;
+}
+
+.c-img {
+    margin-top: 30px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.c-img img {
+    width: 50%;
+    height: 1000px;
+    object-fit: cover;
 }
