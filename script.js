@@ -302,6 +302,7 @@ toggleSwitch.addEventListener("change", () => {
             document.querySelector(".bgDarkColorRep").style.top = "-100%"
         }, 1000);
 
+
     } else {
         document.body.classList.remove("dark-mode");
         localStorage.setItem("theme", "light");
