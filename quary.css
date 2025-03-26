@@ -368,10 +368,16 @@
         height: 600px;
     }
 
-    .brand-card-slide {
-        width: 200px;
+    .first {
+        font-size: 1.5rem;
     }
 
+    .brand-card-slide {
+        margin: 0 20px;
+    }
 
+    .font-container  {
+        padding: 25px 0;
+    }
 
 }

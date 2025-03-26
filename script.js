@@ -282,23 +282,58 @@ window.addEventListener("scroll", function () {
 
 
 
-    const brandSlider = document.getElementById("brandSlider");
-    const bndSliderClone = brandSlider.innerHTML;
-    brandSlider.innerHTML += bndSliderClone;
+// dark light mood
+const toggleSwitch = document.getElementById("theme-toggle");
 
-    let brandPosition = 0;
-    const brandSpeed = 1; // Speed of the marquee
+// Check local storage for theme preference
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    toggleSwitch.checked = true;
+}
 
-    function animateBrandSlider() {
-      brandPosition -= brandSpeed;
-      if (brandPosition <= -brandSlider.scrollWidth / 2) {
-        brandPosition = 0;
-      }
-      brandSlider.style.transform = `translateX(${brandPosition}px)`;
-      requestAnimationFrame(animateBrandSlider);
+// Toggle theme and save preference
+toggleSwitch.addEventListener("change", () => {
+    if (toggleSwitch.checked) {
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+        document.querySelector(".bgDarkColorRep").style.top = "20px";
+
+        setTimeout(() => {
+            document.querySelector(".bgDarkColorRep").style.top = "-100%"
+        }, 1000);
+
+    } else {
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("theme", "light");
+        document.querySelector(".bgLightColorRep").style.top = "20px";
+
+        setTimeout(() => {
+            document.querySelector(".bgLightColorRep").style.top = "-100%"
+        }, 1000);
     }
+});
 
-    animateBrandSlider();
+
+
+
+
+const brandSlider = document.getElementById("brandSlider");
+const bndSliderClone = brandSlider.innerHTML;
+brandSlider.innerHTML += bndSliderClone;
+
+let brandPosition = 0;
+const brandSpeed = 1; // Speed of the marquee
+
+function animateBrandSlider() {
+    brandPosition -= brandSpeed;
+    if (brandPosition <= -brandSlider.scrollWidth / 2) {
+        brandPosition = 0;
+    }
+    brandSlider.style.transform = `translateX(${brandPosition}px)`;
+    requestAnimationFrame(animateBrandSlider);
+}
+
+animateBrandSlider();
 
 
 
